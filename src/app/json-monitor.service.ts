@@ -25,8 +25,4 @@ export class JsonMonitorService {
     localStorage.setItem('edidData', JSON.stringify(data));
   }
 
-  searchInResponses(responses: any[], searchTerm: string): any[] {
-    // Implement your search logic here
-    return responses.filter(response => response.someProperty.includes(searchTerm));
-  }
 }

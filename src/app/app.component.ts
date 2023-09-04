@@ -72,9 +72,7 @@ isSelected(index: number): boolean {
 }
 
 sort(field: string): void {
-  console.log('Hi')
   if (!this.sortOrder[field] || this.sortOrder[field] === 'desc') {
-    console.log('Hi1')
     this.sortedEDIDs.sort((a, b) => (a[field] > b[field] ? 1 : -1));
     this.sortOrder[field] = 'asc';
   } else {
