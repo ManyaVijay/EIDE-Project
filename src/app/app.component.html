@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>EDID List</h1>
+  <input type="text" [(ngModel)]="searchTerm" (input)="search()"  placeholder="Search EDIDs"   />
+    <div class="row row-cols-1 row-cols-md-3 top-space" >
+    <div class="col mb-4"  *ngFor="let edid of filteredData let i = index"  (click)="toggle(i)"
+    [class.selected]="isSelected(i)"  >
+      <div class="card" (click)="sort('field1')" >
+        <div [ngClass]="edid.status === 0 ? 'grey-header' : 'header'" #query  >{{edid.Name}}</div>
+        <div class="card-body">
+          <h5 class="card-title">{{edid.NativeResolution}}</h5>
+          <p class="card-text alignment">{{edid.Size}}</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

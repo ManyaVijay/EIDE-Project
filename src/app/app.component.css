@@ -1,0 +1,29 @@
+.testimonial {
+    color: black;
+    padding: 40px;
+  }
+
+  .grey-header{
+    background-color: rgb(216, 217, 217);
+    color: lightslategray;
+    padding: 5px; 
+    text-align: center; 
+    font-size: 700;
+  }
+  .header{
+    background-color: blue; 
+    padding: 5px; 
+    color: #fff; 
+    text-align: center; 
+    font-size: 700;
+  }
+  .alignment {
+    text-align: right;
+  }
+  .top-space{
+    padding-top: 10px;
+  }
+  
+  .selected {
+    border: 1px solid blue; /* Change the border style as needed */
+  }
